@@ -27,7 +27,7 @@
             <input type="hidden" name="action" value="delete">
             <c:forEach items="${items}" var="item">
                 <p>
-                    <input type="radio" name="item" value="${item}">
+                    <input type="radio" name="item" value="${item}">${item}
                 </p>
             </c:forEach>
             <button type="submit">Delete</button>
