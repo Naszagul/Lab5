@@ -23,7 +23,8 @@
             <button type="submit">Add</button>
         </form>
         
-        <form>
+        <form action="shoppingList" method="POST">
+            <input type="hidden" name="action" value="delete">
             <c:forEach items="${items}" var="item">
                 <p>
                     <input type="radio" name="item" value="${item}">
